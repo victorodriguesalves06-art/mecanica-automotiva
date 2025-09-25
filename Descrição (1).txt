@@ -1,9 +1,9 @@
-# Auto Repair - Sistema de Gerenciamento de Mecânica Automotiva
+# Mundo peças - Sistema de Gerenciamento de Mecânica Automotiva
 
 ![Logo](logo.png)
 
 ## Sobre o Projeto
-O **Auto Repair** é um sistema de gerenciamento para oficinas mecânicas desenvolvido em **Python (Tkinter + SQLite)**.  
+O **Mundo peças** é um sistema de gerenciamento para oficinas mecânicas desenvolvido em **Python (Tkinter + SQLite)**.  
 Ele foi projetado para ser um software didático, mas já implementa várias funcionalidades reais de uma oficina, como:
 
 - Cadastro de clientes, veículos, peças e ferramentas  
