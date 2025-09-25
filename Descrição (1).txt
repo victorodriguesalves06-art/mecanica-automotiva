@@ -1,0 +1,60 @@
+# Auto Repair - Sistema de Gerenciamento de Mecânica Automotiva
+
+![Logo](logo.png)
+
+## Sobre o Projeto
+O **Auto Repair** é um sistema de gerenciamento para oficinas mecânicas desenvolvido em **Python (Tkinter + SQLite)**.  
+Ele foi projetado para ser um software didático, mas já implementa várias funcionalidades reais de uma oficina, como:
+
+- Cadastro de clientes, veículos, peças e ferramentas  
+- Emissão e gerenciamento de ordens de serviço  
+- Controle de estoque de peças  
+- Controle de ferramentas utilizadas  
+- Emissão de faturas e registro de pagamentos  
+- Diferenciação de usuários (**Administrador** x **Cliente**)  
+- Interface gráfica amigável com **Tkinter**
+
+---
+
+## Estrutura do Banco de Dados
+O banco foi modelado de acordo com o modelo lógico de uma mecânica automotiva.  
+As principais entidades são:
+
+- **users** → Usuários (administradores, clientes, mecânicos)  
+- **vehicles** → Veículos cadastrados de clientes  
+- **parts** → Peças em estoque  
+- **tools** → Ferramentas disponíveis  
+- **services** → Ordens de serviço  
+- **service_parts** → Relação N:N (ordem usa peças)  
+- **service_tools** → Relação N:N (ordem usa ferramentas)  
+- **invoices** → Faturas geradas a partir das ordens  
+- **payments** → Pagamentos de cada fatura  
+
+---
+
+## Telas (Tkinter)
+- Login de usuário  
+- Painel do administrador  
+- Painel do cliente  
+- Cadastro e consulta de clientes  
+- Cadastro e consulta de veículos  
+- Cadastro e consulta de peças  
+- Cadastro e consulta de ferramentas  
+- Abertura e acompanhamento de ordens de serviço  
+- Emissão de faturas e pagamentos  
+
+---
+
+## Tecnologias Utilizadas
+- **Python 3.x**  
+- **Tkinter** (GUI)  
+- **SQLite** (Banco de Dados)  
+
+---
+
+## Como Executar
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/Linaldi7/AutoRepair1.git
+   cd auto-repair
+
