@@ -1,5 +1,5 @@
 """
-Auto Repair - Sistema Gerenciador de Mecânica Automotiva (versão didática)
+Mundo peças - Sistema Gerenciador de Mecânica Automotiva (versão didática)
 Requisitos atendidos (resumo):
 - GUI em Tkinter com 12 telas/janelas distintas
 - Login e diferenciação de usuários: cliente x administrador
@@ -17,7 +17,7 @@ import sqlite3
 import os
 import datetime
 
-DB_NAME = "auto_repair.db"
+DB_NAME = "Mundo_peças.db"
 LOGO_PATH = "logo.png"  # colocar logo da mecânica aqui (ou deixar placeholder)
 
 # ---------- Banco de Dados ----------
@@ -129,10 +129,10 @@ def format_currency(v):
     return f"R$ {v:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
 
 # ---------- App UI ----------
-class AutoRepairApp:
+class MundopeçasApp:
     def __init__(self, root):
         self.root = root
-        root.title("Auto Repair - Sistema Gerenciador de Mecânica")
+        root.title("Mundo peças - Sistema Gerenciador de Mecânica")
         root.geometry("1440x900")
         root.resizable(False, False)
         self.conn = sqlite3.connect(DB_NAME)
@@ -743,6 +743,7 @@ Dica:
 if __name__ == "__main__":
     init_db()
     root = tk.Tk()
-    app = AutoRepairApp(root)
+    app = MundopeçasApp(root)
     root.mainloop()
+
 
